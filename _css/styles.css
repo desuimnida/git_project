@@ -1,0 +1,306 @@
+
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+
+
+/*-------------------------------------
+| Resets
+-------------------------------------*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*-------------------------------------
+| root
+-------------------------------------*/
+
+body { background-color: #FFFFFF; margin: 0px;
+ }
+  a:link {color: #A63C44;}
+
+.page-wrapper {
+	width: 90%;
+	max-width: 1200px;
+	min-width: 320px;
+	padding: 25px;
+	margin-top: 300px;
+
+	margin: 300px auto 0px;
+
+}
+
+/*-------------------------------------
+| first children
+-------------------------------------*/
+.intro 		{ padding: 10px; position: relative; }
+.supporting {  padding: 10px; }
+.sidebar 	{ padding: 10px;}
+
+
+/*-------------------------------------
+| .intro children
+-------------------------------------*/
+.intro header 		{ padding: 10px; }
+.intro .summary 	{ 
+	width: 300px;
+	position: relative;
+	top: -100px;
+	left: 0px;
+}
+.intro .preamble 	{ padding: 10px; }
+
+
+/*-------------------------------------
+| .supporting children
+-------------------------------------*/
+.supporting .explanation	{ padding: 10px; }
+.supporting .participation 	{ padding: 10px; }
+.supporting .benefits 		{ padding: 10px; }
+.supporting .requirements 	{ padding: 10px; }
+.supporting footer 			{ padding: 10px;
+font-family: Avenir; font-size: 10px; }
+
+
+/*-------------------------------------
+| .sidebar children
+-------------------------------------*/
+.sidebar .design-selection	{ padding: 10px; }
+.sidebar .design-archives 	{ padding: 10px; }
+.sidebar .zen-resources 	{ padding: 10px; }
+
+
+
+/*-------------------------------------
+| Resoponsive
+-------------------------------------*/
+@media screen and (min-width:500px) {
+
+	body { background-image: url(../_img/triangle-bg_02.jpg); 
+	background-repeat: no-repeat;
+	background-position: center;
+
+	}
+
+@media screen and (min-width:900px) {
+
+	body { background-image: url(../_img/triangle-bg_02.jpg); 
+	background-repeat: no-repeat;
+	background-position: -100px 230px;
+	background-size: 1600px; }
+
+
+	.page-wrapper {
+		position: relative;
+		padding: 0px; 
+	}
+
+	.intro { width: 70%; }
+	.supporting { width: 70%; }
+
+	.sidebar {
+		position: absolute;
+		width: 30%;
+		right: 0px; 
+		top: 0px; 
+	}
+}
+
+
+
+/*----------------------------
+|SIDE BAR NAVIGATION
+----------------------------*/
+
+nav ul {margin: 0px; padding: 0px;}
+nav li {list-style-type: none; display: inline;
+font-family: Avenir; 
+font-size: 10px;}
+
+.zen-resources ul {margin: 0px; padding: 0px;}
+.zen-resources li {list-style-type: none; display: inline;}
+
+
+
+/*---------------------------
+|SELECT A DESIGN
+---------------------------*/
+
+.design-selection li {
+	display: block; 
+	background-image: url(../_img/people2_07.png);
+
+	margin-bottom: 15px;
+	height: 130px;
+	width: 355px;
+	font-size: 0px;
+
+}
+
+.designer-name {
+display:block;
+ 
+ position: relative;
+margin-top: 78px;
+margin-left: 143px;
+
+	}
+
+.design-selection a.design-name {
+	display: block; 
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 10px;
+	text-decoration: none;
+
+	position: relative;
+	top: 92px;
+}
+
+.design-selection a.design-name:hover
+
+/*this tergets the "by"*/
+.design-selection li {
+	display: block;
+	color: #A63C44;
+	margin-bottom: 20px;
+	font-size: 12px;
+	text-align: right;
+}
+
+/*targets the designer-name link*/
+.design-selection a.designer-name {
+	color: #A63C44;
+	font-family: Avenir;
+	font-size: 10px;
+	line-height: 40px;
+}
+
+
+
+/*----------------------------
+|ZEN RESOURCES AND ARCHIVES
+----------------------------*/
+.zen-resources a, .design-archives a {
+	display: block;
+
+	line-height: 200px;
+	background-image: url(../_img/people2_07.png);
+	margin-bottom: 5px;
+	height: 130px;
+	width: 355px;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: Avenir; font-size: 10px;
+}
+
+.zen-resources a:hover, .design-archives a:hover 
+{background-image: url(../_img/people2_07.png);}
+
+/*--------------------------
+|H3 Animated Background
+--------------------------*/
+h3 {
+	line-height: 100px;
+	font-size: 30px;
+	font-family: 'Poiret One', cursive;
+
+	
+	background-image: url(../_img/titles_02.png);
+	
+	text-align: center;
+
+	background-position: left top;
+
+	transition: all .5s;
+}
+h3:hover {
+	background-position: left bottom;
+	transition:all .5s;
+	
+	}
+
+.sidebar h3 {font-size: 18px; line-height: 50px; }
+
+
+
+/*H4*/
+h4 {
+	line-height: 100px;
+	font-size: 30px;
+	font-family: 'Poiret One', cursive;
+	
+	
+	color: #A32432;
+	
+	text-align: center;
+
+	background-position: left top;
+	transition: all .5s;
+}
+h4:hover {
+	background-position: left bottom;
+	transition:all .5s;
+	
+	}
+
+.sidebar h4 {font-size: 18px; line-height: 50px; }
+
+
+/*-------------------------
+|Before and After
+-------------------------*/
+p:before {
+	content: "• ";
+}
+p:after {
+	content: " The Capitol Is Listening.";
+}
+.page-wrapper:before {
+	content: "";
+	display: block;
+	width: 250px;
+	height: 250px;
+
+	position: absolute;
+	left: -250px;
+	top: 0px;
+}
+.page-wrapper:after {
+	content: "";
+	display: block;
+	width: 250px;
+	height: 250px;
+
+	position: absolute;
+	right: -250px;
+	top: 0px;
+
+	}
+
+	h1 {
+		background-image: 
+		width: 690px;
+		height:270px;
+		float: right;
+		margin-top: -300px;
+		margin-right: -130px;
+		
+
+
+	
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+		 
+
+
+p {font-family: Avenir;
+font-size: 10px; }
+
+
